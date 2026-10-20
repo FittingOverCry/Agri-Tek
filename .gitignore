@@ -1,0 +1,61 @@
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Secrets and local environment variables
+.env
+.env.*
+!.env.example
+!.env.production.example
+*.pem
+*.key
+secrets/
+credentials/
+passwords.txt
+
+# React / Node
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/.vercel/
+npm-debug.log*
+yarn-debug.log*
+.pnpm-debug.log*
+
+# Python / Flask
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+backend/.venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Python local configuration
+instance/
+*.sqlite
+*.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# MQTT private material — never commit real credentials or keys
+mqtt/password_file
+mqtt/certs/
+mqtt/private/
